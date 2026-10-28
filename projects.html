@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expeditions | Tanishq Patel — Projects & Architecture Dives</title>
+  <meta name="description" content="Explore featured engineering projects by Tanishq Patel from Gujarat, India: RupeeWise (offline-first fintech vault) and GatiSetu (NH-48 Gujarat corridor logistics platform).">
+
+  <!-- Google Fonts & Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Single Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="--stop-end: 35%; --stop-progress: 43%;">
+
+  <!-- ========================================================================
+       ROAD-TRIP LOADING OVERLAY (Stop 3 of 7: Expeditions)
+       ======================================================================== -->
+  <aside class="route-loader" aria-label="Loading road trip view">
+    <div class="loader-landscape">
+      <div class="loader-stars"></div>
+      <div class="loader-moon"></div>
+      <div class="loader-fog"></div>
+      
+      <svg class="mountain-layer mountain-layer-1" viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path d="M0,400 L0,230 L160,160 L320,240 L480,130 L640,250 L820,110 L980,220 L1120,150 L1200,210 L1200,400 Z" fill="#141A28" />
+        <polygon points="160,160 140,185 180,185" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="480,130 455,165 505,165" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="820,110 790,155 850,155" fill="#FFE0B2" opacity="0.7"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-2" viewBox="0 0 1200 350" preserveAspectRatio="none">
+        <path d="M0,350 L0,180 L220,120 L380,200 L560,95 L720,180 L900,105 L1060,170 L1200,140 L1200,350 Z" fill="#0D121B" />
+        <polygon points="220,120 195,150 245,150" fill="#FFB547" opacity="0.5"/>
+        <polygon points="560,95 530,135 590,135" fill="#FFB547" opacity="0.6"/>
+        <polygon points="900,105 870,145 930,145" fill="#FFB547" opacity="0.6"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-3" viewBox="0 0 1200 300" preserveAspectRatio="none">
+        <path d="M0,300 L0,140 L280,70 L480,160 L680,60 L880,140 L1080,75 L1200,120 L1200,300 Z" fill="#080C12" />
+      </svg>
+
+      <div class="loader-snow"></div>
+
+      <div class="loader-road-wrap">
+        <svg class="loader-road-svg" viewBox="0 0 1200 160" preserveAspectRatio="none">
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#1A2230" stroke-width="14" stroke-linecap="round" fill="none" />
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#FFB547" stroke-width="2" stroke-dasharray="10 12" stroke-linecap="round" fill="none" opacity="0.7" />
+          
+          <g class="road-marker marker-1" transform="translate(60, 110)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">BASE</text>
+          </g>
+          <g class="road-marker marker-2" transform="translate(240, 105)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">ABOUT</text>
+          </g>
+          <g class="road-marker marker-3" transform="translate(420, 80)">
+            <circle r="6" fill="#FFB547" />
+            <circle r="12" fill="none" stroke="#FFB547" stroke-width="1.5" opacity="0.6" />
+            <text x="0" y="-14" fill="#FFB547" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">STOP 3 · PROJECTS</text>
+          </g>
+          <g class="road-marker marker-4" transform="translate(600, 108)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SKILLS</text>
+          </g>
+          <g class="road-marker marker-5" transform="translate(780, 95)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">EDUCATION</text>
+          </g>
+          <g class="road-marker marker-6" transform="translate(960, 85)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">INTERESTS</text>
+          </g>
+          <g class="road-marker marker-7" transform="translate(1140, 100)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SUMMIT</text>
+          </g>
+        </svg>
+
+        <div class="car-driver" aria-hidden="true">
+          <div class="car-light-beam"></div>
+          <div class="car-tail-glow"></div>
+          <svg viewBox="0 0 52 24" fill="none" width="48" height="22">
+            <path d="M4 16 L10 16 L15 8 L32 8 L42 13 L49 14 L50 18 L46 19 L44 18 L38 18 L36 19 L16 19 L14 18 L8 18 L6 19 Z" fill="#E8ECF1"/>
+            <path d="M16 9 L31 9 L39 13 L16 13 Z" fill="#07090C" opacity="0.8"/>
+            <polygon points="48,14 51,15 48,16" fill="#FFF275"/>
+            <circle cx="12" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+            <circle cx="40" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-hud-top">
+      <div class="loader-hud-brand">
+        <span class="loader-hud-pulse"></span>
+        <span>WAYPOINT 03 // EXPEDITIONS HUD</span>
+      </div>
+      <div>HEADING TO: EXPEDITIONS (PROJECTS)</div>
+    </div>
+
+    <div class="loader-hud-bottom">
+      <div class="loader-status-bar">
+        <div class="loader-destination">
+          <span>● STOP 3 OF 7:</span>
+          <span>Heading to: Expeditions</span>
+        </div>
+        <div>Tuning suspension for technical terrain…</div>
+      </div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY HUD NAVBAR
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Return to Base Camp">
+        <div class="logo-mountain" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 20L9 8L13 14L16 10L21 20H3Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="name">TP</span>
+          <span class="sub">Expeditions</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </label>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-link">Base Camp</a>
+        <a href="about.html" class="nav-link">The Traveller</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Expeditions</a>
+        <a href="skills.html" class="nav-link">Toolkit</a>
+        <a href="education.html" class="nav-link">Milestones</a>
+        <a href="interests.html" class="nav-link">Off-Road</a>
+        <a href="contact.html" class="nav-link">Summit</a>
+      </nav>
+    </div>
+    <div class="nav-route-bar">
+      <div class="nav-route-progress"></div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE CONTENT
+       ======================================================================== -->
+  <div class="page-container">
+    <main class="section" id="projects-main">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Waypoint 03 // Built Systems</span>
+          <h1 class="section-title">Expeditions & Architectures</h1>
+          <p class="section-subtitle">
+            Engineered with zero bloat. Click "View Details" on any expedition for an in-depth breakdown of the architecture, security models, and learnings.
+          </p>
+        </div>
+
+        <!-- PURE CSS CATEGORY FILTER TABS (Using Hidden Radio Inputs) -->
+        <input type="radio" name="project-filter" id="filter-all" class="filter-radio" checked>
+        <input type="radio" name="project-filter" id="filter-mobile" class="filter-radio">
+        <input type="radio" name="project-filter" id="filter-web" class="filter-radio">
+        <input type="radio" name="project-filter" id="filter-startup" class="filter-radio">
+
+        <div class="filter-controls" role="tablist" aria-label="Filter projects by category">
+          <label for="filter-all" class="filter-btn">All Expeditions (4)</label>
+          <label for="filter-mobile" class="filter-btn">Native Android (2)</label>
+          <label for="filter-web" class="filter-btn">Web & Full-Stack (2)</label>
+          <label for="filter-startup" class="filter-btn">Logistics & Startups (1)</label>
+        </div>
+
+        <!-- ====================================================================
+             PROJECTS GRID
+             ==================================================================== -->
+        <div class="projects-grid">
+          
+          <!-- ================================================================
+               PROJECT 1: RupeeWise (Android, Mobile, Fintech)
+               ================================================================ -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-cover">
+              <div class="project-cover-placeholder">
+                <img src="images/project-rupeewise.jpg" alt="RupeeWise App Cover" loading="lazy" onerror="this.style.display='none'">
+                <div class="project-badge-top">
+                  <span class="tag-chip active">OFFLINE-FIRST // FINTECH</span>
+                </div>
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                  <circle cx="7" cy="15" r="1.5" fill="var(--amber)"/>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">BIOMETRIC VAULT ACTIVE</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Native Android · Privacy-First</span>
+              <h2 class="project-title">RupeeWise</h2>
+              <p class="project-summary">
+                100% offline-first native Android app combining an expense manager, a Khaata debt ledger with partial installments, and group bill splitting. Zero cloud or SMS dependency.
+              </p>
+              <div class="project-tags">
+                <span class="tag-chip">Kotlin</span>
+                <span class="tag-chip">Jetpack Compose</span>
+                <span class="tag-chip">Room SQLite</span>
+                <span class="tag-chip">BiometricPrompt</span>
+                <span class="tag-chip">StateFlow</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">On-Device Security</span>
+                <a href="#modal-rupeewise" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                  View Details →
+                </a>
+              </div>
+            </div>
+            <div class="project-route-line"></div>
+          </article>
+
+          <!-- ================================================================
+               PROJECT 2: GatiSetu (Startup, Logistics, Full-Stack, Web)
+               ================================================================ -->
+          <article class="project-card" data-category="startup web">
+            <div class="project-cover">
+              <div class="project-cover-placeholder">
+                <img src="images/project-gatisetu.jpg" alt="GatiSetu Logistics Platform" loading="lazy" onerror="this.style.display='none'">
+                <div class="project-badge-top">
+                  <span class="tag-chip active">B2B LOGISTICS // SOLO FOUNDER</span>
+                </div>
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">NH-48 GUJARAT CORRIDOR</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Freight Tech · Gujarat Corridor</span>
+              <h2 class="project-title">GatiSetu</h2>
+              <p class="project-summary">
+                Solo-founder B2B freight marketplace on the 370-km NH-48 corridor (Vapi to Ahmedabad) connecting empty returning trucks ("khali fero") with GIDC factories needing outbound freight.
+              </p>
+              <div class="project-tags">
+                <span class="tag-chip">Solo Founder</span>
+                <span class="tag-chip">Driver PWA</span>
+                <span class="tag-chip">Shipper Portal</span>
+                <span class="tag-chip">WhatsApp API</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">Active Corridor Beta</span>
+                <a href="#modal-gatisetu" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                  View Details →
+                </a>
+              </div>
+            </div>
+            <div class="project-route-line"></div>
+          </article>
+
+          <!-- ================================================================
+               PROJECT 3: [PROJECT 3 PLACEHOLDER]
+               ================================================================ -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-cover">
+              <div class="project-cover-placeholder">
+                <img src="images/project3.jpg" alt="[PROJECT 3] Cover" loading="lazy" onerror="this.style.display='none'">
+                <div class="project-badge-top">
+                  <span class="tag-chip active">SYSTEMS // ANDROID</span>
+                </div>
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">[SYSTEM ARCHITECTURE]</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <!-- ✏️ EDIT: Category Tag -->
+              <span class="project-category">[PROJECT 3 CATEGORY]</span>
+              <!-- ✏️ EDIT: Project Title -->
+              <h2 class="project-title">[PROJECT 3: TITLE]</h2>
+              <!-- ✏️ EDIT: Project Summary -->
+              <p class="project-summary">
+                [Short one-line summary: Explain the main problem your third project solves, what architecture you designed, and the impact it achieved.]
+              </p>
+              <!-- ✏️ EDIT: Tech Chips -->
+              <div class="project-tags">
+                <span class="tag-chip">[Kotlin / Java]</span>
+                <span class="tag-chip">[SQLite / Room]</span>
+                <span class="tag-chip">[Coroutines]</span>
+                <span class="tag-chip">[Clean Arch]</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">[Status: Completed]</span>
+                <a href="#modal-project3" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                  View Details →
+                </a>
+              </div>
+            </div>
+            <div class="project-route-line"></div>
+          </article>
+
+          <!-- ================================================================
+               PROJECT 4: [PROJECT 4 PLACEHOLDER]
+               ================================================================ -->
+          <article class="project-card" data-category="web">
+            <div class="project-cover">
+              <div class="project-cover-placeholder">
+                <img src="images/project4.jpg" alt="[PROJECT 4] Cover" loading="lazy" onerror="this.style.display='none'">
+                <div class="project-badge-top">
+                  <span class="tag-chip active">WEB // DISTRIBUTED</span>
+                </div>
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">[CLOUD / DISTRIBUTED]</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <!-- ✏️ EDIT: Category Tag -->
+              <span class="project-category">[PROJECT 4 CATEGORY]</span>
+              <!-- ✏️ EDIT: Project Title -->
+              <h2 class="project-title">[PROJECT 4: TITLE]</h2>
+              <!-- ✏️ EDIT: Project Summary -->
+              <p class="project-summary">
+                [Short one-line summary: Explain your fourth project, e.g. web application, REST API engine, or algorithm visualizer with responsive UI.]
+              </p>
+              <!-- ✏️ EDIT: Tech Chips -->
+              <div class="project-tags">
+                <span class="tag-chip">[HTML / CSS]</span>
+                <span class="tag-chip">[Python / SQL]</span>
+                <span class="tag-chip">[API Design]</span>
+                <span class="tag-chip">[Responsive UI]</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">[Status: Beta]</span>
+                <a href="#modal-project4" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                  View Details →
+                </a>
+              </div>
+            </div>
+            <div class="project-route-line"></div>
+          </article>
+
+        </div>
+
+        <!-- ====================================================================
+             HOW TO ADD A NEW PROJECT (Beginner copy-paste template in comment)
+             ==================================================================== -->
+        <!-- ✏️ TEMPLATE: COPY & PASTE TO ADD A NEW PROJECT CARD:
+        <article class="project-card" data-category="mobile">
+          <div class="project-cover">
+            <div class="project-cover-placeholder">
+              <img src="images/your-project-image.jpg" alt="Project Cover" loading="lazy" onerror="this.style.display='none'">
+              <div class="project-badge-top">
+                <span class="tag-chip active">CATEGORY // TAG</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">Category Name</span>
+            <h2 class="project-title">Your Project Name</h2>
+            <p class="project-summary">One line explanation of what it does.</p>
+            <div class="project-tags">
+              <span class="tag-chip">Tech 1</span>
+              <span class="tag-chip">Tech 2</span>
+            </div>
+            <div class="project-footer">
+              <span>Status: Active</span>
+              <a href="#modal-yourproject" class="btn btn-secondary">View Details →</a>
+            </div>
+          </div>
+          <div class="project-route-line"></div>
+        </article>
+        -->
+
+      </div>
+    </main>
+
+    <!-- ========================================================================
+         PURE CSS LIGHTBOX DETAIL PANELS (Using :target Selector — ZERO JavaScript)
+         ======================================================================== -->
+    
+    <!-- ----------------------------------------------------------------------
+         MODAL 1: RUPEEWISE DETAILS
+         ---------------------------------------------------------------------- -->
+    <div class="modal-overlay" id="modal-rupeewise" role="dialog" aria-modal="true" aria-labelledby="modal-title-rupeewise">
+      <a href="#projects-main" class="modal-backdrop-exit" aria-label="Close modal"></a>
+      <div class="modal-content">
+        <a href="#projects-main" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        
+        <div class="modal-header">
+          <span class="section-tag">Native Android // Offline-First Fintech</span>
+          <h2 class="modal-title" id="modal-title-rupeewise">RupeeWise</h2>
+          <p style="color: var(--amber); font-family: var(--font-mono); font-size: 0.875rem;">
+            On-Device Privacy · Khaata Debt Ledger · Group Bill Splitting · Biometric Vault
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Challenge & The Problem</h3>
+          <p>
+            Most modern personal finance and expense-tracking applications require continuous cloud sync, read confidential SMS messages without transparency, and leak intimate financial metadata to third-party ad networks. Furthermore, traditional Khaata (debt ledger) apps do not accommodate granular partial repayment installments or group splitting without requiring all friends to sign up for accounts.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Architecture & Solution</h3>
+          <p>
+            RupeeWise is engineered as a 100% offline-first native Android application. It functions with zero internet permission, meaning user data literally cannot leave the physical handset. All data is structured within a normalized Room SQLite database.
+          </p>
+          <ul class="modal-list" style="margin-top: 1rem;">
+            <li><strong>3-in-1 Financial Core:</strong> Unified daily expense manager, Khaata (borrow/lend) ledger with installment tracking, and a zero-sign-up group bill splitter.</li>
+            <li><strong>Multi-Tier Security Vault:</strong> Fortified by an 8-character master encryption password, a 4-digit quick launch PIN, and hardware-backed Android BiometricPrompt (fingerprint and 3D facial unlock).</li>
+            <li><strong>Reactive State Machine:</strong> Clean Architecture with Kotlin StateFlow and Coroutines, ensuring 60fps fluidity across all Material 3 Jetpack Compose screens.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Technical Specifications</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem;">
+            <span class="tag-chip active">Kotlin</span>
+            <span class="tag-chip active">Jetpack Compose (Material 3)</span>
+            <span class="tag-chip active">Room DB (SQLite)</span>
+            <span class="tag-chip active">Coroutines & StateFlow</span>
+            <span class="tag-chip active">Android BiometricPrompt</span>
+            <span class="tag-chip active">Clean Architecture (MVVM)</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Key Learnings & Takeaways</h3>
+          <p>
+            Designing for offline-first demands rigorous SQLite schema migrations, transaction safety during multi-person expense splits, and handling edge states in biometric hardware without crashing fallback PIN authentication paths.
+          </p>
+        </div>
+
+        <!-- ✏️ EDIT: GitHub & Live Links -->
+        <div class="modal-actions">
+          <a href="[YOUR_GITHUB_RUPEEWISE_URL]" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub Repository [URL]</span>
+          </a>
+          <a href="[YOUR_DEMO_RUPEEWISE_URL]" class="btn btn-secondary" target="_blank" rel="noopener">
+            <span>Watch Demo Video [URL]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         MODAL 2: GATISETU DETAILS
+         ---------------------------------------------------------------------- -->
+    <div class="modal-overlay" id="modal-gatisetu" role="dialog" aria-modal="true" aria-labelledby="modal-title-gatisetu">
+      <a href="#projects-main" class="modal-backdrop-exit" aria-label="Close modal"></a>
+      <div class="modal-content">
+        <a href="#projects-main" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        
+        <div class="modal-header">
+          <span class="section-tag">B2B Logistics // Solo Founder Startup</span>
+          <h2 class="modal-title" id="modal-title-gatisetu">GatiSetu</h2>
+          <p style="color: var(--amber); font-family: var(--font-mono); font-size: 0.875rem;">
+            370-km NH-48 Gujarat Freight Corridor · Deadhead Reduction · Driver PWA
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Industry Bottleneck</h3>
+          <p>
+            The 370-kilometer National Highway 48 corridor traversing Vapi, Surat, Ankleshwar, Bharuch, Vadodara, and Ahmedabad is India's dense industrial manufacturing artery. Every single day, thousands of commercial trucks deliver industrial consignments and then return completely empty ("khali fero" or deadhead), bleeding fuel and driver earnings. Concurrently, small-and-medium GIDC factories face severe spot-freight shortages and opaque broker markups.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The GatiSetu Solution</h3>
+          <p>
+            As a solo founder, I designed and built GatiSetu to directly match verified empty returning trucks with factory outbound freight along exact return coordinates.
+          </p>
+          <ul class="modal-list" style="margin-top: 1rem;">
+            <li><strong>Multilingual Driver PWA:</strong> Progressive Web App localized in Gujarati, Hindi, and English. Employs large touch targets and a 4-digit PIN authentication so non-tech-savvy drivers can log trips in seconds.</li>
+            <li><strong>Factory Shipper Portal:</strong> Self-serve portal for GIDC dispatch managers to post outbound loads, preview verified vehicle specs, and lock transparent corridor rates.</li>
+            <li><strong>Trip Profit Logbook:</strong> Visualizes outbound versus return freight revenue, revealing net profit gains to fleet operators.</li>
+            <li><strong>WhatsApp Live Updates:</strong> Automated trip status and tracking links dispatched to dispatch desks without requiring proprietary app downloads.</li>
+            <li><strong>Vehicle Verification & Multi-Tenancy:</strong> Complete organization-level data isolation and vehicle RC verification.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Tech Stack</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem;">
+            <span class="tag-chip active">Solo Founder & Architect</span>
+            <span class="tag-chip active">Progressive Web App (PWA)</span>
+            <span class="tag-chip active">Multi-Tenant Architecture</span>
+            <span class="tag-chip active">WhatsApp Business API Webhooks</span>
+            <span class="tag-chip active">High-Density Route Matching</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Key Founder & Engineering Learnings</h3>
+          <p>
+            Field testing on NH-48 taught me that user adoption in logistics depends heavily on zero friction: eliminating long onboarding forms in favor of WhatsApp alerts and single-tap vernacular screens made the difference between driver rejection and genuine daily usage.
+          </p>
+        </div>
+
+        <!-- ✏️ EDIT: Links -->
+        <div class="modal-actions">
+          <a href="[YOUR_GATISETU_PORTAL_URL]" class="btn btn-primary" target="_blank" rel="noopener">
+            <span>Explore GatiSetu Portal [URL]</span>
+          </a>
+          <a href="[YOUR_GATISETU_GITHUB_URL]" class="btn btn-secondary" target="_blank" rel="noopener">
+            <span>Review Source Architecture [URL]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         MODAL 3: [PROJECT 3 DETAILS]
+         ---------------------------------------------------------------------- -->
+    <div class="modal-overlay" id="modal-project3" role="dialog" aria-modal="true" aria-labelledby="modal-title-project3">
+      <a href="#projects-main" class="modal-backdrop-exit" aria-label="Close modal"></a>
+      <div class="modal-content">
+        <a href="#projects-main" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        
+        <div class="modal-header">
+          <!-- ✏️ EDIT: Tag -->
+          <span class="section-tag">[TAG // CATEGORY]</span>
+          <!-- ✏️ EDIT: Title -->
+          <h2 class="modal-title" id="modal-title-project3">[PROJECT 3 TITLE]</h2>
+          <!-- ✏️ EDIT: Subtitle -->
+          <p style="color: var(--amber); font-family: var(--font-mono); font-size: 0.875rem;">
+            [Key Architecture Highlights / Tech Summary]
+          </p>
+        </div>
+
+        <!-- ✏️ EDIT: Problem Section -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Problem</h3>
+          <p>
+            [Describe the real-world problem you set out to solve with this project. What inefficiency, latency, or friction existed before?]
+          </p>
+        </div>
+
+        <!-- ✏️ EDIT: Solution Section -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Solution & Architecture</h3>
+          <p>
+            [Explain your engineering implementation, system flow, database design, and key architectural choices.]
+          </p>
+          <ul class="modal-list" style="margin-top: 1rem;">
+            <li><strong>Feature 1:</strong> [Description of primary feature]</li>
+            <li><strong>Feature 2:</strong> [Description of secondary feature]</li>
+            <li><strong>Feature 3:</strong> [Description of tertiary feature]</li>
+          </ul>
+        </div>
+
+        <!-- ✏️ EDIT: Tech Stack -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Tech Stack</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem;">
+            <span class="tag-chip active">[Tool 1]</span>
+            <span class="tag-chip active">[Tool 2]</span>
+            <span class="tag-chip active">[Tool 3]</span>
+          </div>
+        </div>
+
+        <!-- ✏️ EDIT: Learnings -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Key Learnings</h3>
+          <p>
+            [What did building this project teach you about performance, debugging, or systems design?]
+          </p>
+        </div>
+
+        <!-- ✏️ EDIT: Links -->
+        <div class="modal-actions">
+          <a href="[PROJECT_3_GITHUB_URL]" class="btn btn-primary" target="_blank" rel="noopener">
+            <span>GitHub Repository [URL]</span>
+          </a>
+          <a href="[PROJECT_3_DEMO_URL]" class="btn btn-secondary" target="_blank" rel="noopener">
+            <span>Live Demo [URL]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         MODAL 4: [PROJECT 4 DETAILS]
+         ---------------------------------------------------------------------- -->
+    <div class="modal-overlay" id="modal-project4" role="dialog" aria-modal="true" aria-labelledby="modal-title-project4">
+      <a href="#projects-main" class="modal-backdrop-exit" aria-label="Close modal"></a>
+      <div class="modal-content">
+        <a href="#projects-main" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        
+        <div class="modal-header">
+          <!-- ✏️ EDIT: Tag -->
+          <span class="section-tag">[TAG // CATEGORY]</span>
+          <!-- ✏️ EDIT: Title -->
+          <h2 class="modal-title" id="modal-title-project4">[PROJECT 4 TITLE]</h2>
+          <p style="color: var(--amber); font-family: var(--font-mono); font-size: 0.875rem;">
+            [Key Architecture Highlights / Tech Summary]
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Problem</h3>
+          <p>
+            [Describe the challenge and why you built this project.]
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">The Solution & Architecture</h3>
+          <p>
+            [Explain how your solution works under the hood.]
+          </p>
+          <ul class="modal-list" style="margin-top: 1rem;">
+            <li><strong>Feature 1:</strong> [Description]</li>
+            <li><strong>Feature 2:</strong> [Description]</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Tech Stack</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem;">
+            <span class="tag-chip active">[Tool 1]</span>
+            <span class="tag-chip active">[Tool 2]</span>
+            <span class="tag-chip active">[Tool 3]</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a href="[PROJECT_4_GITHUB_URL]" class="btn btn-primary" target="_blank" rel="noopener">
+            <span>GitHub Repository [URL]</span>
+          </a>
+          <a href="[PROJECT_4_DEMO_URL]" class="btn btn-secondary" target="_blank" rel="noopener">
+            <span>Live Demo [URL]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         SHARED FOOTER
+         ======================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-route-map">
+          <div class="footer-route-line"></div>
+          <ul class="footer-stops-list">
+            <li class="footer-stop-item">
+              <a href="index.html" class="footer-stop-dot">01</a>
+              <a href="index.html" class="footer-stop-name">Base Camp</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="about.html" class="footer-stop-dot">02</a>
+              <a href="about.html" class="footer-stop-name">The Traveller</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="projects.html" class="footer-stop-dot" style="border-color: var(--amber); color: var(--amber);">03</a>
+              <a href="projects.html" class="footer-stop-name" style="color: var(--amber);">Expeditions</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="skills.html" class="footer-stop-dot">04</a>
+              <a href="skills.html" class="footer-stop-name">Toolkit</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="education.html" class="footer-stop-dot">05</a>
+              <a href="education.html" class="footer-stop-name">Milestones</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="interests.html" class="footer-stop-dot">06</a>
+              <a href="interests.html" class="footer-stop-name">Off-Road</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="contact.html" class="footer-stop-dot">07</a>
+              <a href="contact.html" class="footer-stop-name">Summit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Tanishq Patel. Built with pure HTML & CSS.
+          </div>
+          <div class="footer-road-quote">
+            "Built on the road, one commit at a time."
+          </div>
+          <div>
+            <a href="index.html" style="color: var(--amber); display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>↑ Return to Base Camp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

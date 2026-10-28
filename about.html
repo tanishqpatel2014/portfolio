@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Traveller | Tanishq Patel — Personal Bio & Journey</title>
+  <meta name="description" content="Discover the story of Tanishq Patel from Gujarat, India: Computer Science undergraduate, Android developer, and mountain driver bridging engineering and high-altitude exploration.">
+
+  <!-- Google Fonts & Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Single Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="--stop-end: 18%; --stop-progress: 28%;">
+
+  <!-- ========================================================================
+       ROAD-TRIP LOADING OVERLAY (Stop 2 of 7: The Traveller)
+       ======================================================================== -->
+  <aside class="route-loader" aria-label="Loading road trip view">
+    <div class="loader-landscape">
+      <div class="loader-stars"></div>
+      <div class="loader-moon"></div>
+      <div class="loader-fog"></div>
+      
+      <svg class="mountain-layer mountain-layer-1" viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path d="M0,400 L0,230 L160,160 L320,240 L480,130 L640,250 L820,110 L980,220 L1120,150 L1200,210 L1200,400 Z" fill="#141A28" />
+        <polygon points="160,160 140,185 180,185" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="480,130 455,165 505,165" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="820,110 790,155 850,155" fill="#FFE0B2" opacity="0.7"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-2" viewBox="0 0 1200 350" preserveAspectRatio="none">
+        <path d="M0,350 L0,180 L220,120 L380,200 L560,95 L720,180 L900,105 L1060,170 L1200,140 L1200,350 Z" fill="#0D121B" />
+        <polygon points="220,120 195,150 245,150" fill="#FFB547" opacity="0.5"/>
+        <polygon points="560,95 530,135 590,135" fill="#FFB547" opacity="0.6"/>
+        <polygon points="900,105 870,145 930,145" fill="#FFB547" opacity="0.6"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-3" viewBox="0 0 1200 300" preserveAspectRatio="none">
+        <path d="M0,300 L0,140 L280,70 L480,160 L680,60 L880,140 L1080,75 L1200,120 L1200,300 Z" fill="#080C12" />
+      </svg>
+
+      <div class="loader-snow"></div>
+
+      <div class="loader-road-wrap">
+        <svg class="loader-road-svg" viewBox="0 0 1200 160" preserveAspectRatio="none">
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#1A2230" stroke-width="14" stroke-linecap="round" fill="none" />
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#FFB547" stroke-width="2" stroke-dasharray="10 12" stroke-linecap="round" fill="none" opacity="0.7" />
+          
+          <g class="road-marker marker-1" transform="translate(60, 110)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">BASE</text>
+          </g>
+          <g class="road-marker marker-2" transform="translate(240, 105)">
+            <circle r="6" fill="#FFB547" />
+            <circle r="12" fill="none" stroke="#FFB547" stroke-width="1.5" opacity="0.6" />
+            <text x="0" y="-14" fill="#FFB547" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">STOP 2 · ABOUT</text>
+          </g>
+          <g class="road-marker marker-3" transform="translate(420, 80)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">PROJECTS</text>
+          </g>
+          <g class="road-marker marker-4" transform="translate(600, 108)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SKILLS</text>
+          </g>
+          <g class="road-marker marker-5" transform="translate(780, 95)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">EDUCATION</text>
+          </g>
+          <g class="road-marker marker-6" transform="translate(960, 85)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">INTERESTS</text>
+          </g>
+          <g class="road-marker marker-7" transform="translate(1140, 100)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SUMMIT</text>
+          </g>
+        </svg>
+
+        <div class="car-driver" aria-hidden="true">
+          <div class="car-light-beam"></div>
+          <div class="car-tail-glow"></div>
+          <svg viewBox="0 0 52 24" fill="none" width="48" height="22">
+            <path d="M4 16 L10 16 L15 8 L32 8 L42 13 L49 14 L50 18 L46 19 L44 18 L38 18 L36 19 L16 19 L14 18 L8 18 L6 19 Z" fill="#E8ECF1"/>
+            <path d="M16 9 L31 9 L39 13 L16 13 Z" fill="#07090C" opacity="0.8"/>
+            <polygon points="48,14 51,15 48,16" fill="#FFF275"/>
+            <circle cx="12" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+            <circle cx="40" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-hud-top">
+      <div class="loader-hud-brand">
+        <span class="loader-hud-pulse"></span>
+        <span>WAYPOINT 02 // LOGISTICS HUD</span>
+      </div>
+      <div>HEADING TO: THE TRAVELLER (ABOUT)</div>
+    </div>
+
+    <div class="loader-hud-bottom">
+      <div class="loader-status-bar">
+        <div class="loader-destination">
+          <span>● STOP 2 OF 7:</span>
+          <span>Heading to: The Traveller</span>
+        </div>
+        <div>Navigating mountain pass…</div>
+      </div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY HUD NAVBAR
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Return to Base Camp">
+        <div class="logo-mountain" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 20L9 8L13 14L16 10L21 20H3Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="name">TP</span>
+          <span class="sub">The Traveller</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </label>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-link">Base Camp</a>
+        <a href="about.html" class="nav-link active" aria-current="page">The Traveller</a>
+        <a href="projects.html" class="nav-link">Expeditions</a>
+        <a href="skills.html" class="nav-link">Toolkit</a>
+        <a href="education.html" class="nav-link">Milestones</a>
+        <a href="interests.html" class="nav-link">Off-Road</a>
+        <a href="contact.html" class="nav-link">Summit</a>
+      </nav>
+    </div>
+    <div class="nav-route-bar">
+      <div class="nav-route-progress"></div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE CONTENT
+       ======================================================================== -->
+  <div class="page-container">
+    <main class="section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Waypoint 02 // Identity</span>
+          <h1 class="section-title">The Traveller & The Engineer</h1>
+          <p class="section-subtitle">
+            Exploring the junction between computer science, resilient mobile systems, and high-altitude mountain journeys.
+          </p>
+        </div>
+
+        <!-- Two-Column About Layout -->
+        <div class="about-grid">
+          <!-- Left Column: Mountain-Masked Portrait & Quick HUD -->
+          <div>
+            <div class="portrait-container">
+              <!-- Mountain-shaped clip-path framing the photo -->
+              <div class="portrait-frame">
+                <!-- ✏️ EDIT: Drop your photo into images/profile.jpg -->
+                <img src="images/profile.jpg" alt="Portrait of Tanishq Patel" class="portrait-img" loading="lazy" onerror="this.style.display='none'">
+                <!-- Fallback card displayed if profile.jpg is not yet added -->
+                <div class="portrait-fallback">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                    <path d="M12 2L2 22H22L12 2Z"/>
+                    <circle cx="12" cy="14" r="3"/>
+                  </svg>
+                  <p style="font-family: var(--font-mono); font-size: 0.8125rem;">
+                    [DROP YOUR PHOTO IN:<br><code style="color: var(--amber);">images/profile.jpg</code>]
+                  </p>
+                  <span style="font-size: 0.75rem; color: var(--dim);">4:5 Vertical Mountain Mask</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fast Spec HUD Info Card -->
+            <div class="hud-card">
+              <div class="hud-item">
+                <span class="hud-label">Name</span>
+                <span class="hud-val">Tanishq Patel</span>
+              </div>
+              <div class="hud-item">
+                <span class="hud-label">Base Location</span>
+                <!-- ✏️ EDIT: You can add your specific city here (e.g. Surat, Ahmedabad, Vadodara) -->
+                <span class="hud-val">Gujarat, India</span>
+              </div>
+              <div class="hud-item">
+                <span class="hud-label">Direct Line</span>
+                <span class="hud-val">tanishqpatel205@gmail.com</span>
+              </div>
+              <!-- ✏️ EDIT: Languages you speak -->
+              <div class="hud-item">
+                <span class="hud-label">Languages</span>
+                <span class="hud-val">[English / Hindi / Gujarati]</span>
+              </div>
+              <!-- ✏️ EDIT: Your College / University -->
+              <div class="hud-item">
+                <span class="hud-label">Institution</span>
+                <span class="hud-val">[COLLEGE / UNIVERSITY NAME]</span>
+              </div>
+              <!-- ✏️ EDIT: Current Work Availability -->
+              <div class="hud-item">
+                <span class="hud-label">Status</span>
+                <span class="hud-val available">Open to Internships</span>
+              </div>
+            </div>
+
+            <!-- Download Resume Action -->
+            <div style="margin-top: 1.5rem;">
+              <!-- ✏️ EDIT: Place your resume.pdf in the root folder -->
+              <a href="resume.pdf" class="btn btn-primary" style="width: 100%;" download>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--dim); text-align: center; margin-top: 0.5rem;">
+                Place your <code>resume.pdf</code> in the portfolio/ folder.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Bio & Driving Philosophy -->
+          <div>
+            <div class="glass-card" style="margin-bottom: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 1.25rem;">
+                Navigating Complex Terrain, In Code & On The Road
+              </h2>
+
+              <!-- Paragraph 1 — Who you are & your origin -->
+              <p style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.75;">
+                Based out of Gujarat, India, I am a B.Tech Computer Science student with a passionate focus on native Android development, systems architecture, and distributed problem-solving. My obsession with software started with a desire to build tools that work completely without friction: zero latency, zero unnecessary network requests, and absolute reliability.
+              </p>
+
+              <!-- ✏️ EDIT: Paragraph 2 — What you love building -->
+              <p style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.75;">
+                <!-- ✏️ EDIT: Replace with your engineering interests -->
+                I specialize in crafting offline-first native applications with Kotlin, Jetpack Compose, Room SQLite, and reactive state architectures. From developing secure on-device biometric fintech vaults like <strong>RupeeWise</strong> to designing corridor-wide B2B logistics ecosystems like <strong>GatiSetu</strong>, I love turning convoluted real-world bottlenecks into sleek, resilient interfaces.
+              </p>
+
+              <!-- ✏️ EDIT: Paragraph 3 — How travel & driving shape your engineering mindset -->
+              <p style="font-size: 1.05rem; line-height: 1.75;">
+                <!-- ✏️ EDIT: Replace with your driving & travel philosophy -->
+                When I am not sitting before an IDE, you will find me behind the wheel on an open highway or trekking through high-altitude Himalayan passes. Driving taught me that unexpected detours require calm decision-making; mountaineering taught me that endurance and preparation beat quick shortcuts. This mindset directly reflects in my code: modular, rigorously structured, and built to survive edge cases.
+              </p>
+            </div>
+
+            <!-- Milestones along a Thin Vertical Road Line -->
+            <div class="glass-card">
+              <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                <span class="loader-hud-pulse"></span>
+                <span>Personal Route Milestones</span>
+              </h3>
+
+              <div class="roadmap-timeline">
+                <!-- ✏️ EDIT: Milestone 1 -->
+                <div class="roadmap-item">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-year">[2022] · First Pass & First Commit</div>
+                  <div class="roadmap-title">Discovered Programming & The High Roads</div>
+                  <div class="roadmap-desc">
+                    Started B.Tech CSE; built first C/C++ algorithms and undertook my first solo mountain expedition. Realized the synergy between discipline and exploration.
+                  </div>
+                </div>
+
+                <!-- ✏️ EDIT: Milestone 2 -->
+                <div class="roadmap-item">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-year">[2023] · Android Architecture & Kotlin</div>
+                  <div class="roadmap-title">Fell in Love with Mobile & Modern Android</div>
+                  <div class="roadmap-desc">
+                    Transitioned into Kotlin, Jetpack Compose, and offline databases. Built deep fundamentals in Clean Architecture, Coroutines, and responsive UI design.
+                  </div>
+                </div>
+
+                <!-- ✏️ EDIT: Milestone 3 -->
+                <div class="roadmap-item">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-year">[2024] · RupeeWise & GatiSetu</div>
+                  <div class="roadmap-title">Shipped Production Systems & Solved Corridor Logistics</div>
+                  <div class="roadmap-desc">
+                    Engineered RupeeWise (offline-first fintech vault) and launched GatiSetu on the 370-km NH-48 Gujarat industrial corridor connecting returning trucks with GIDC factory freight.
+                  </div>
+                </div>
+
+                <!-- ✏️ EDIT: Milestone 4 -->
+                <div class="roadmap-item">
+                  <div class="roadmap-dot"></div>
+                  <div class="roadmap-year">[PRESENT] · The Next Horizon</div>
+                  <div class="roadmap-title">Targeting High-Impact Engineering Roles</div>
+                  <div class="roadmap-desc">
+                    Actively seeking software engineering & Android internships where robust engineering meets intuitive product experience.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trip Log Stat Row -->
+        <div style="margin-top: 4rem;">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-tag">Telemetry // Trip Log</span>
+            <h2 class="section-title">The Expedition Log</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>18,380</span><span class="accent">ft</span>
+              </div>
+              <div class="stat-label">Highest Altitude Reached (Khardung La)</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>10,000</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Highway Kilometers Clocked</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>10</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Himalayan & Ghat Passes Scaled</div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>1,200</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Code Commits Logged</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========================================================================
+         SHARED FOOTER
+         ======================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-route-map">
+          <div class="footer-route-line"></div>
+          <ul class="footer-stops-list">
+            <li class="footer-stop-item">
+              <a href="index.html" class="footer-stop-dot">01</a>
+              <a href="index.html" class="footer-stop-name">Base Camp</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="about.html" class="footer-stop-dot" style="border-color: var(--amber); color: var(--amber);">02</a>
+              <a href="about.html" class="footer-stop-name" style="color: var(--amber);">The Traveller</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="projects.html" class="footer-stop-dot">03</a>
+              <a href="projects.html" class="footer-stop-name">Expeditions</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="skills.html" class="footer-stop-dot">04</a>
+              <a href="skills.html" class="footer-stop-name">Toolkit</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="education.html" class="footer-stop-dot">05</a>
+              <a href="education.html" class="footer-stop-name">Milestones</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="interests.html" class="footer-stop-dot">06</a>
+              <a href="interests.html" class="footer-stop-name">Off-Road</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="contact.html" class="footer-stop-dot">07</a>
+              <a href="contact.html" class="footer-stop-name">Summit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Tanishq Patel. Built with pure HTML & CSS.
+          </div>
+          <div class="footer-road-quote">
+            "Built on the road, one commit at a time."
+          </div>
+          <div>
+            <a href="index.html" style="color: var(--amber); display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>↑ Return to Base Camp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

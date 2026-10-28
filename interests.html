@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off-Road | Tanishq Patel — Mountains, Driving & Expeditions</title>
+  <meta name="description" content="Off-road passions of Tanishq Patel from Gujarat, India: Himalayan mountaineering, night highway drives, automotive engineering, and scenic route logs.">
+
+  <!-- Google Fonts & Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Single Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="--stop-end: 84%; --stop-progress: 86%;">
+
+  <!-- ========================================================================
+       ROAD-TRIP LOADING OVERLAY (Stop 6 of 7: Off-Road)
+       ======================================================================== -->
+  <aside class="route-loader" aria-label="Loading road trip view">
+    <div class="loader-landscape">
+      <div class="loader-stars"></div>
+      <div class="loader-moon"></div>
+      <div class="loader-fog"></div>
+      
+      <svg class="mountain-layer mountain-layer-1" viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path d="M0,400 L0,230 L160,160 L320,240 L480,130 L640,250 L820,110 L980,220 L1120,150 L1200,210 L1200,400 Z" fill="#141A28" />
+        <polygon points="160,160 140,185 180,185" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="480,130 455,165 505,165" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="820,110 790,155 850,155" fill="#FFE0B2" opacity="0.7"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-2" viewBox="0 0 1200 350" preserveAspectRatio="none">
+        <path d="M0,350 L0,180 L220,120 L380,200 L560,95 L720,180 L900,105 L1060,170 L1200,140 L1200,350 Z" fill="#0D121B" />
+        <polygon points="220,120 195,150 245,150" fill="#FFB547" opacity="0.5"/>
+        <polygon points="560,95 530,135 590,135" fill="#FFB547" opacity="0.6"/>
+        <polygon points="900,105 870,145 930,145" fill="#FFB547" opacity="0.6"/>
+      </svg>
+
+      <svg class="mountain-layer mountain-layer-3" viewBox="0 0 1200 300" preserveAspectRatio="none">
+        <path d="M0,300 L0,140 L280,70 L480,160 L680,60 L880,140 L1080,75 L1200,120 L1200,300 Z" fill="#080C12" />
+      </svg>
+
+      <div class="loader-snow"></div>
+
+      <div class="loader-road-wrap">
+        <svg class="loader-road-svg" viewBox="0 0 1200 160" preserveAspectRatio="none">
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#1A2230" stroke-width="14" stroke-linecap="round" fill="none" />
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#FFB547" stroke-width="2" stroke-dasharray="10 12" stroke-linecap="round" fill="none" opacity="0.7" />
+          
+          <g class="road-marker marker-1" transform="translate(60, 110)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">BASE</text>
+          </g>
+          <g class="road-marker marker-2" transform="translate(240, 105)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">ABOUT</text>
+          </g>
+          <g class="road-marker marker-3" transform="translate(420, 80)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">PROJECTS</text>
+          </g>
+          <g class="road-marker marker-4" transform="translate(600, 108)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SKILLS</text>
+          </g>
+          <g class="road-marker marker-5" transform="translate(780, 95)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">EDUCATION</text>
+          </g>
+          <g class="road-marker marker-6" transform="translate(960, 85)">
+            <circle r="6" fill="#FFB547" />
+            <circle r="12" fill="none" stroke="#FFB547" stroke-width="1.5" opacity="0.6" />
+            <text x="0" y="-14" fill="#FFB547" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">STOP 6 · OFF-ROAD</text>
+          </g>
+          <g class="road-marker marker-7" transform="translate(1140, 100)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SUMMIT</text>
+          </g>
+        </svg>
+
+        <div class="car-driver" aria-hidden="true">
+          <div class="car-light-beam"></div>
+          <div class="car-tail-glow"></div>
+          <svg viewBox="0 0 52 24" fill="none" width="48" height="22">
+            <path d="M4 16 L10 16 L15 8 L32 8 L42 13 L49 14 L50 18 L46 19 L44 18 L38 18 L36 19 L16 19 L14 18 L8 18 L6 19 Z" fill="#E8ECF1"/>
+            <path d="M16 9 L31 9 L39 13 L16 13 Z" fill="#07090C" opacity="0.8"/>
+            <polygon points="48,14 51,15 48,16" fill="#FFF275"/>
+            <circle cx="12" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+            <circle cx="40" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-hud-top">
+      <div class="loader-hud-brand">
+        <span class="loader-hud-pulse"></span>
+        <span>WAYPOINT 06 // OFF-ROAD TELEMETRY</span>
+      </div>
+      <div>HEADING TO: OFF-ROAD (INTERESTS)</div>
+    </div>
+
+    <div class="loader-hud-bottom">
+      <div class="loader-status-bar">
+        <div class="loader-destination">
+          <span>● STOP 6 OF 7:</span>
+          <span>Heading to: Off-Road</span>
+        </div>
+        <div>Engaging all-wheel drive mode…</div>
+      </div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY HUD NAVBAR
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Return to Base Camp">
+        <div class="logo-mountain" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 20L9 8L13 14L16 10L21 20H3Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="name">TP</span>
+          <span class="sub">Off-Road</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </label>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-link">Base Camp</a>
+        <a href="about.html" class="nav-link">The Traveller</a>
+        <a href="projects.html" class="nav-link">Expeditions</a>
+        <a href="skills.html" class="nav-link">Toolkit</a>
+        <a href="education.html" class="nav-link">Milestones</a>
+        <a href="interests.html" class="nav-link active" aria-current="page">Off-Road</a>
+        <a href="contact.html" class="nav-link">Summit</a>
+      </nav>
+    </div>
+    <div class="nav-route-bar">
+      <div class="nav-route-progress"></div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE CONTENT
+       ======================================================================== -->
+  <div class="page-container">
+    <main class="section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Waypoint 06 // Exploration</span>
+          <h1 class="section-title">Off-Road & High Horizons</h1>
+          <p class="section-subtitle">
+            Beyond the keyboard. Mountains, asphalt, mechanical dynamics, and remote route reconnaissance that keep the curiosity alive.
+          </p>
+        </div>
+
+        <!-- ====================================================================
+             1. MOUNTAINS & TREKKING
+             ==================================================================== -->
+        <section style="margin-bottom: 5rem;">
+          <!-- Parallax Band with Atmospheric Background -->
+          <div class="parallax-band" style="background-image: linear-gradient(rgba(7,9,12,0.6), rgba(7,9,12,0.9)), url('images/band-mountains.jpg');">
+            <div class="parallax-content">
+              <span class="tag-chip active" style="margin-bottom: 0.75rem;">HIGH ALTITUDE // ENDURANCE</span>
+              <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Mountains & High Passes</h2>
+              <!-- ✏️ EDIT: Personal paragraph about mountains -->
+              <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text);">
+                [There is an unmatched clarity that comes with breathing thin Himalayan air at 18,000 feet. Scaling passes like Khardung La and Rohtang demands deliberate pacing, relentless gear checks, and deep respect for the elements. In the mountains, every step is deliberate — an ethos I bring directly into software architecture.]
+              </p>
+            </div>
+          </div>
+
+          <!-- Photo Gallery (3 Photos with Hover Zoom & :target Lightbox) -->
+          <div class="photo-gallery-grid">
+            <a href="#photo-trek1" class="photo-gallery-item" aria-label="View Mountain Photo 1">
+              <img src="images/trek1.jpg" alt="High Himalayan pass expedition" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpath d=\'M100 300 L250 150 L400 300 L500 200 L600 300\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'200\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trek1.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Himalayan Crest · Above 15,000 ft</div>
+            </a>
+
+            <a href="#photo-trek2" class="photo-gallery-item" aria-label="View Mountain Photo 2">
+              <img src="images/trek2.jpg" alt="Rocky ridgeline trail" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpath d=\'M50 350 L200 180 L350 280 L480 120 L600 250\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'200\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trek2.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Ridge Trail · Sunset Glow</div>
+            </a>
+
+            <a href="#photo-trek3" class="photo-gallery-item" aria-label="View Mountain Photo 3">
+              <img src="images/trek3.jpg" alt="Mountain summit bivouac" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpolygon points=\'300,100 150,300 450,300\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'200\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trek3.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Glacial Pass · Zero Fog</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             2. CARS & DRIVING
+             ==================================================================== -->
+        <section style="margin-bottom: 5rem;">
+          <div class="parallax-band" style="background-image: linear-gradient(rgba(7,9,12,0.6), rgba(7,9,12,0.9)), url('images/band-cars.jpg');">
+            <div class="parallax-content">
+              <span class="tag-chip active" style="margin-bottom: 0.75rem;">MECHANICS // DYNAMICS</span>
+              <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Cars & Highway Dynamics</h2>
+              <!-- ✏️ EDIT: Personal paragraph about cars & driving -->
+              <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text);">
+                [Driving isn't just transportation to me; it's mechanical harmony. The tactile feedback through the steering wheel, the throttle response down a deserted mountain switchback, and the calm focus of an 800-km night drive. Understanding vehicle dynamics — power-to-weight ratios, traction limits, and suspension geometry — fuels my love for precision engineering.]
+              </p>
+            </div>
+          </div>
+
+          <div class="photo-gallery-grid">
+            <a href="#photo-drive1" class="photo-gallery-item" aria-label="View Drive Photo 1">
+              <img src="images/drive1.jpg" alt="Twisting asphalt highway at night" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Ccircle cx=\'300\' cy=\'200\' r=\'80\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'205\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: drive1.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Night Highway · Headlight Beams</div>
+            </a>
+
+            <a href="#photo-drive2" class="photo-gallery-item" aria-label="View Drive Photo 2">
+              <img src="images/drive2.jpg" alt="Cockpit dashboard gauges" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpath d=\'M100 200 Q300 100 500 200\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'205\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: drive2.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Cockpit HUD · Night Cruising</div>
+            </a>
+
+            <a href="#photo-drive3" class="photo-gallery-item" aria-label="View Drive Photo 3">
+              <img src="images/drive3.jpg" alt="Parked car on mountain viewpoint" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Crect x=\'150\' y=\'140\' width=\'300\' height=\'120\' rx=\'10\' stroke=\'%23FFB547\' stroke-width=\'2\' fill=\'none\'/%3E%3Ctext x=\'300\' y=\'205\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: drive3.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Overlook Halt · Twilight Horizon</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             3. TRAVEL & ROAD TRIPS
+             ==================================================================== -->
+        <section style="margin-bottom: 5rem;">
+          <div class="parallax-band" style="background-image: linear-gradient(rgba(7,9,12,0.6), rgba(7,9,12,0.9)), url('images/band-trips.jpg');">
+            <div class="parallax-content">
+              <span class="tag-chip active" style="margin-bottom: 0.75rem;">WAYFINDING // EXPEDITIONS</span>
+              <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Travel & Uncharted Routes</h2>
+              <!-- ✏️ EDIT: Personal paragraph about travel -->
+              <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text);">
+                [Over 18,000 kilometers driven across coastal corridors, arid deserts, and twisting ghat passes. Travelling off the beaten path forces you to rely on mental models, offline tools, and local conversations. It demystifies the world and keeps me humble.]
+              </p>
+            </div>
+          </div>
+
+          <div class="photo-gallery-grid">
+            <a href="#photo-trip1" class="photo-gallery-item" aria-label="View Trip Photo 1">
+              <img src="images/trip1.jpg" alt="Long road stretching to mountains" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpath d=\'M250 400 L290 200 L310 200 L350 400\' fill=\'%23FFB547\' opacity=\'0.3\'/%3E%3Ctext x=\'300\' y=\'180\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trip1.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">NH Corridor · Open Horizon</div>
+            </a>
+
+            <a href="#photo-trip2" class="photo-gallery-item" aria-label="View Trip Photo 2">
+              <img src="images/trip2.jpg" alt="Desert highway sunset" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Ccircle cx=\'300\' cy=\'160\' r=\'40\' fill=\'%23FFB547\' opacity=\'0.5\'/%3E%3Ctext x=\'300\' y=\'240\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trip2.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">High-Desert Pass · Golden Hour</div>
+            </a>
+
+            <a href="#photo-trip3" class="photo-gallery-item" aria-label="View Trip Photo 3">
+              <img src="images/trip3.jpg" alt="Stargazing on a dark road" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%2311161F\' width=\'600\' height=\'400\'/%3E%3Cpath d=\'M50 50 L55 55 M200 80 L205 85 M450 60 L455 65\' stroke=\'%23FFF\' stroke-width=\'3\'/%3E%3Ctext x=\'300\' y=\'200\' fill=\'%238A94A3\' font-family=\'monospace\' text-anchor=\'middle\'%3E[DROP IMAGE: trip3.jpg]%3C/text%3E%3C/svg%3E'">
+              <div class="photo-caption">Stargazing Camp · Zero Light Pollution</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             STYLIZED DARK MAP: Interactive SVG with Glowing Pins
+             ==================================================================== -->
+        <section class="map-container">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-tag">Cartography // Topographic Chart</span>
+            <h2 class="section-title">Expedition Coordinates & Waypoints</h2>
+            <p class="section-subtitle">
+              Hover over the pulsing waypoints to view route telemetry and altitude logs.
+            </p>
+          </div>
+
+          <div class="map-svg-wrap">
+            <svg viewBox="0 0 900 420" fill="none" style="width: 100%; height: auto; overflow: visible;">
+              <!-- Topographic Contour Lines -->
+              <path d="M50 200 C 150 120, 300 240, 450 180 C 600 120, 750 260, 850 190" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" fill="none"/>
+              <path d="M40 230 C 160 150, 310 270, 460 210 C 610 150, 760 290, 860 220" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1.5" fill="none"/>
+              <path d="M30 260 C 170 180, 320 300, 470 240 C 620 180, 770 320, 870 250" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1.5" fill="none"/>
+              <path d="M60 170 C 140 90, 290 210, 440 150 C 590 90, 740 230, 840 160" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" fill="none"/>
+              
+              <!-- Abstract Route Connecting Highways -->
+              <path d="M 220 80 L 320 220 L 460 260 L 640 180" stroke="var(--amber)" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
+
+              <!-- PIN 1: Khardung La / Ladakh -->
+              <g class="map-pin-group">
+                <g class="map-pin" transform="translate(220, 80)">
+                  <circle class="pin-pulse" r="10" fill="none" stroke="#FFB547" stroke-width="1.5"/>
+                  <circle r="5" fill="#FFB547"/>
+                  <text x="12" y="4" fill="#E8ECF1" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[PLACE 1: KHARDUNG LA]</text>
+                </g>
+                <!-- Tooltip Card on Hover -->
+                <g class="map-tooltip" transform="translate(140, 110)">
+                  <rect width="190" height="70" rx="8" fill="#0E1218" stroke="#FFB547" stroke-width="1"/>
+                  <text x="12" y="22" fill="#FFB547" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">KHARDUNG LA PASS</text>
+                  <text x="12" y="38" fill="#E8ECF1" font-family="'Inter', sans-serif" font-size="9">Elevation: 17,982 ft · Ladakh</text>
+                  <text x="12" y="54" fill="#8A94A3" font-family="'Inter', sans-serif" font-size="8">Zero-signal testing & high endurance</text>
+                </g>
+              </g>
+
+              <!-- PIN 2: NH-48 Gujarat Freight Corridor -->
+              <g class="map-pin-group">
+                <g class="map-pin" transform="translate(320, 220)">
+                  <circle class="pin-pulse" r="10" fill="none" stroke="#FF7A2F" stroke-width="1.5"/>
+                  <circle r="5" fill="#FF7A2F"/>
+                  <text x="12" y="4" fill="#E8ECF1" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[PLACE 2: NH-48 CORRIDOR]</text>
+                </g>
+                <g class="map-tooltip" transform="translate(240, 250)">
+                  <rect width="210" height="70" rx="8" fill="#0E1218" stroke="#FF7A2F" stroke-width="1"/>
+                  <text x="12" y="22" fill="#FF7A2F" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">NH-48 FREIGHT CORRIDOR</text>
+                  <text x="12" y="38" fill="#E8ECF1" font-family="'Inter', sans-serif" font-size="9">370 km · Vapi to Ahmedabad</text>
+                  <text x="12" y="54" fill="#8A94A3" font-family="'Inter', sans-serif" font-size="8">Birthplace of GatiSetu logistics</text>
+                </g>
+              </g>
+
+              <!-- PIN 3: Spiti Valley & Kunzum Pass -->
+              <g class="map-pin-group">
+                <g class="map-pin" transform="translate(460, 260)">
+                  <circle class="pin-pulse" r="10" fill="none" stroke="#6FB7FF" stroke-width="1.5"/>
+                  <circle r="5" fill="#6FB7FF"/>
+                  <text x="12" y="4" fill="#E8ECF1" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[PLACE 3: WESTERN GHATS]</text>
+                </g>
+                <g class="map-tooltip" transform="translate(410, 290)">
+                  <rect width="200" height="70" rx="8" fill="#0E1218" stroke="#6FB7FF" stroke-width="1"/>
+                  <text x="12" y="22" fill="#6FB7FF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">WESTERN GHATS SWITCHBACKS</text>
+                  <text x="12" y="38" fill="#E8ECF1" font-family="'Inter', sans-serif" font-size="9">Monsoon drive · Hairpin corners</text>
+                  <text x="12" y="54" fill="#8A94A3" font-family="'Inter', sans-serif" font-size="8">Chassis dynamics & wet grip calibration</text>
+                </g>
+              </g>
+
+              <!-- PIN 4: [PLACE 4] -->
+              <g class="map-pin-group">
+                <g class="map-pin" transform="translate(640, 180)">
+                  <circle class="pin-pulse" r="10" fill="none" stroke="#3DD9A5" stroke-width="1.5"/>
+                  <circle r="5" fill="#3DD9A5"/>
+                  <text x="12" y="4" fill="#E8ECF1" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">[PLACE 4: SPITI VALLEY]</text>
+                </g>
+                <g class="map-tooltip" transform="translate(560, 210)">
+                  <rect width="200" height="70" rx="8" fill="#0E1218" stroke="#3DD9A5" stroke-width="1"/>
+                  <text x="12" y="22" fill="#3DD9A5" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">SPITI VALLEY CIRCUIT</text>
+                  <text x="12" y="38" fill="#E8ECF1" font-family="'Inter', sans-serif" font-size="9">Kunzum Pass · 14,931 ft</text>
+                  <text x="12" y="54" fill="#8A94A3" font-family="'Inter', sans-serif" font-size="8">Remote high-desert endurance route</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             FUN FACTS HUD ROW & ADDITIONAL INTERESTS
+             ==================================================================== -->
+        <section style="margin-top: 5rem;">
+          <div class="section-header">
+            <span class="section-tag">Driver Quick Telemetry</span>
+            <h2 class="section-title">The Driver's Cockpit Notes</h2>
+          </div>
+
+          <div class="stats-grid">
+            <!-- ✏️ EDIT: Favourite Car -->
+            <div class="stat-box">
+              <span class="stat-label">Favourite Machine</span>
+              <div class="stat-number" style="font-size: 1.5rem; margin-top: 0.5rem; color: var(--amber);">
+                [PORSCHE 911 GT3 / BMW M2]
+              </div>
+              <p style="font-size: 0.8125rem; margin-top: 0.4rem;">Pure mechanical steering & rear-engine weight transfer.</p>
+            </div>
+
+            <!-- ✏️ EDIT: Dream Drive -->
+            <div class="stat-box">
+              <span class="stat-label">Dream Highway Route</span>
+              <div class="stat-number" style="font-size: 1.5rem; margin-top: 0.5rem; color: var(--amber);">
+                [MANALI TO LEH VIA SHINKU LA]
+              </div>
+              <p style="font-size: 0.8125rem; margin-top: 0.4rem;">Glacial rivers, zero cellular reception, pure navigational focus.</p>
+            </div>
+
+            <!-- ✏️ EDIT: Favourite Peak/Trek -->
+            <div class="stat-box">
+              <span class="stat-label">Favourite Peak / Pass</span>
+              <div class="stat-number" style="font-size: 1.5rem; margin-top: 0.5rem; color: var(--amber);">
+                [KHARDUNG LA (17,982 FT)]
+              </div>
+              <p style="font-size: 0.8125rem; margin-top: 0.4rem;">The gateway to the Nubra Valley under sub-zero skies.</p>
+            </div>
+          </div>
+
+          <!-- Additional Interest Chips -->
+          <div class="glass-card" style="margin-top: 2rem; padding: 1.75rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 1rem;">
+              Other Satellite Interests:
+            </span>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <span class="tag-chip active">Night Astrophotography</span>
+              <span class="tag-chip active">Automotive Mechanics & ECU Tuning</span>
+              <span class="tag-chip active">Ambient Analog Soundscapes</span>
+              <span class="tag-chip active">Offline Navigation & Topo Maps</span>
+              <span class="tag-chip active">Cold-Brew Coffee Science</span>
+              <!-- ✏️ EDIT: Add more of your personal interests -->
+              <span class="tag-chip">[YOUR EXTRA INTEREST]</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ========================================================================
+         PURE CSS LIGHTBOXES FOR GALLERY PHOTOS (:target)
+         ======================================================================== -->
+    <div class="modal-overlay" id="photo-trek1">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trek1.jpg" alt="High Himalayan pass expedition" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Himalayan Crest · Above 15,000 ft</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-trek2">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trek2.jpg" alt="Ridge trail sunset" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Ridge Trail · Sunset Glow</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-trek3">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trek3.jpg" alt="Glacial pass" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Glacial Pass · Zero Fog</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-drive1">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/drive1.jpg" alt="Night highway headlights" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Night Highway · Headlight Beams</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-drive2">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/drive2.jpg" alt="Cockpit dashboard" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Cockpit HUD · Night Cruising</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-drive3">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/drive3.jpg" alt="Overlook halt" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Overlook Halt · Twilight Horizon</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-trip1">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trip1.jpg" alt="Open horizon highway" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">NH Corridor · Open Horizon</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-trip2">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trip2.jpg" alt="Desert highway" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">High-Desert Pass · Golden Hour</p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="photo-trip3">
+      <a href="#photo-exit" class="modal-backdrop-exit"></a>
+      <div class="modal-content" style="max-width: 900px; padding: 1rem; text-align: center;">
+        <a href="#photo-exit" class="modal-close-btn">&times;</a>
+        <img src="images/trip3.jpg" alt="Stargazing camp" style="border-radius: 8px; width: 100%; max-height: 75vh; object-fit: contain;">
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.875rem; color: var(--amber);">Stargazing Camp · Zero Light Pollution</p>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         SHARED FOOTER
+         ======================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-route-map">
+          <div class="footer-route-line"></div>
+          <ul class="footer-stops-list">
+            <li class="footer-stop-item">
+              <a href="index.html" class="footer-stop-dot">01</a>
+              <a href="index.html" class="footer-stop-name">Base Camp</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="about.html" class="footer-stop-dot">02</a>
+              <a href="about.html" class="footer-stop-name">The Traveller</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="projects.html" class="footer-stop-dot">03</a>
+              <a href="projects.html" class="footer-stop-name">Expeditions</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="skills.html" class="footer-stop-dot">04</a>
+              <a href="skills.html" class="footer-stop-name">Toolkit</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="education.html" class="footer-stop-dot">05</a>
+              <a href="education.html" class="footer-stop-name">Milestones</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="interests.html" class="footer-stop-dot" style="border-color: var(--amber); color: var(--amber);">06</a>
+              <a href="interests.html" class="footer-stop-name" style="color: var(--amber);">Off-Road</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="contact.html" class="footer-stop-dot">07</a>
+              <a href="contact.html" class="footer-stop-name">Summit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Tanishq Patel. Built with pure HTML & CSS.
+          </div>
+          <div class="footer-road-quote">
+            "Built on the road, one commit at a time."
+          </div>
+          <div>
+            <a href="index.html" style="color: var(--amber); display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>↑ Return to Base Camp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

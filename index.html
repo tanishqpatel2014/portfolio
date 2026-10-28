@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ EDIT: Site title and meta description -->
+  <title>Base Camp | Tanishq Patel — Developer & Mountain Traveller</title>
+  <meta name="description" content="Personal portfolio of Tanishq Patel from Gujarat, India. B.Tech Computer Science student, Android developer, and mountain explorer. Chasing clean code and high summits.">
+  
+  <!-- Fonts with fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Single Shared CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="--stop-end: 2%; --stop-progress: 14%;">
+
+  <!-- ========================================================================
+       SIGNATURE ROAD-TRIP LOADING OVERLAY (Pure CSS, plays for ~2.6s on load)
+       Stop 1 of 7: Base Camp (Home)
+       ======================================================================== -->
+  <aside class="route-loader" aria-label="Loading road trip view">
+    <!-- Mountain landscape backdrop with dusk sky & parallax layers -->
+    <div class="loader-landscape">
+      <div class="loader-stars"></div>
+      <div class="loader-moon"></div>
+      <div class="loader-fog"></div>
+      
+      <!-- Mountain Layer 1 (Distant Silhouette) -->
+      <svg class="mountain-layer mountain-layer-1" viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path d="M0,400 L0,230 L160,160 L320,240 L480,130 L640,250 L820,110 L980,220 L1120,150 L1200,210 L1200,400 Z" fill="#141A28" />
+        <!-- Warm Snow Cap Highlights -->
+        <polygon points="160,160 140,185 180,185" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="480,130 455,165 505,165" fill="#FFE0B2" opacity="0.6"/>
+        <polygon points="820,110 790,155 850,155" fill="#FFE0B2" opacity="0.7"/>
+      </svg>
+
+      <!-- Mountain Layer 2 (Mid-range Ridgeline) -->
+      <svg class="mountain-layer mountain-layer-2" viewBox="0 0 1200 350" preserveAspectRatio="none">
+        <path d="M0,350 L0,180 L220,120 L380,200 L560,95 L720,180 L900,105 L1060,170 L1200,140 L1200,350 Z" fill="#0D121B" />
+        <polygon points="220,120 195,150 245,150" fill="#FFB547" opacity="0.5"/>
+        <polygon points="560,95 530,135 590,135" fill="#FFB547" opacity="0.6"/>
+        <polygon points="900,105 870,145 930,145" fill="#FFB547" opacity="0.6"/>
+      </svg>
+
+      <!-- Mountain Layer 3 (Foreground Ridges) -->
+      <svg class="mountain-layer mountain-layer-3" viewBox="0 0 1200 300" preserveAspectRatio="none">
+        <path d="M0,300 L0,140 L280,70 L480,160 L680,60 L880,140 L1080,75 L1200,120 L1200,300 Z" fill="#080C12" />
+      </svg>
+
+      <!-- Gentle falling snow dots -->
+      <div class="loader-snow"></div>
+
+      <!-- Winding Road Route with Milestones -->
+      <div class="loader-road-wrap">
+        <svg class="loader-road-svg" viewBox="0 0 1200 160" preserveAspectRatio="none">
+          <!-- Asphalt Road Base -->
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#1A2230" stroke-width="14" stroke-linecap="round" fill="none" />
+          <!-- Road Center Dashed Line -->
+          <path d="M 60 110 C 220 130, 340 70, 520 95 C 700 120, 840 75, 1140 100" stroke="#FFB547" stroke-width="2" stroke-dasharray="10 12" stroke-linecap="round" fill="none" opacity="0.7" />
+          
+          <!-- 7 Milestone Markers -->
+          <g class="road-marker marker-1" transform="translate(60, 110)">
+            <circle r="6" fill="#FFB547" />
+            <circle r="12" fill="none" stroke="#FFB547" stroke-width="1.5" opacity="0.6" />
+            <text x="0" y="-14" fill="#FFB547" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">STOP 1 · BASE</text>
+          </g>
+          <g class="road-marker marker-2" transform="translate(240, 105)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">ABOUT</text>
+          </g>
+          <g class="road-marker marker-3" transform="translate(420, 80)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">PROJECTS</text>
+          </g>
+          <g class="road-marker marker-4" transform="translate(600, 108)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SKILLS</text>
+          </g>
+          <g class="road-marker marker-5" transform="translate(780, 95)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">EDUCATION</text>
+          </g>
+          <g class="road-marker marker-6" transform="translate(960, 85)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">INTERESTS</text>
+          </g>
+          <g class="road-marker marker-7" transform="translate(1140, 100)">
+            <circle r="4" fill="#8A94A3" />
+            <text x="0" y="-12" fill="#8A94A3" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">SUMMIT</text>
+          </g>
+        </svg>
+
+        <!-- Pure CSS Animated Car along the SVG Path -->
+        <div class="car-driver" aria-hidden="true">
+          <!-- Headlight Beam Cone -->
+          <div class="car-light-beam"></div>
+          <!-- Red Taillight Glow -->
+          <div class="car-tail-glow"></div>
+          <!-- Sleek Sports Car SVG Silhouette -->
+          <svg viewBox="0 0 52 24" fill="none" width="48" height="22">
+            <path d="M4 16 L10 16 L15 8 L32 8 L42 13 L49 14 L50 18 L46 19 L44 18 L38 18 L36 19 L16 19 L14 18 L8 18 L6 19 Z" fill="#E8ECF1"/>
+            <!-- Roof / Windows -->
+            <path d="M16 9 L31 9 L39 13 L16 13 Z" fill="#07090C" opacity="0.8"/>
+            <!-- Headlight Lens -->
+            <polygon points="48,14 51,15 48,16" fill="#FFF275"/>
+            <!-- Wheels -->
+            <circle cx="12" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+            <circle cx="40" cy="18" r="4.5" fill="#0A0D12" stroke="#485363" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUD Overlay Header -->
+    <div class="loader-hud-top">
+      <div class="loader-hud-brand">
+        <span class="loader-hud-pulse"></span>
+        <!-- Brand Initials -->
+        <span>EXPEDITION HUD // TP GPS ROUTE</span>
+      </div>
+      <div>ELEVATION: 3,420M · HIGHWAY STATUS: CLEAR</div>
+    </div>
+
+    <!-- HUD Overlay Bottom -->
+    <div class="loader-hud-bottom">
+      <div class="loader-status-bar">
+        <div class="loader-destination">
+          <span>● STOP 1 OF 7:</span>
+          <span>Heading to: Base Camp</span>
+        </div>
+        <div class="loader-engine-hint">Starting engine… Ignition OK</div>
+      </div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY HUD NAVIGATION BAR (Pure CSS with Checkbox Toggle)
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- ✏️ EDIT: Your Initials and Brand Name -->
+      <a href="index.html" class="nav-logo" aria-label="Base Camp Home">
+        <div class="logo-mountain" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 20L9 8L13 14L16 10L21 20H3Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="name">TP</span>
+          <span class="sub">Base Camp</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox Hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </label>
+
+      <!-- HUD Navigation Links -->
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-link active" aria-current="page">Base Camp</a>
+        <a href="about.html" class="nav-link">The Traveller</a>
+        <a href="projects.html" class="nav-link">Expeditions</a>
+        <a href="skills.html" class="nav-link">Toolkit</a>
+        <a href="education.html" class="nav-link">Milestones</a>
+        <a href="interests.html" class="nav-link">Off-Road</a>
+        <a href="contact.html" class="nav-link">Summit</a>
+      </nav>
+    </div>
+    <!-- Proportional Route Progress Line (14% on Home) -->
+    <div class="nav-route-bar">
+      <div class="nav-route-progress"></div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE CONTENT (Encapsulated in .page-container with entrance animation)
+       ======================================================================== -->
+  <div class="page-container">
+    <main>
+      <!-- ====================================================================
+           HERO SECTION: 3D Mountain Perspective + Parked Ridge Car + Headlights
+           ==================================================================== -->
+      <section class="hero-section" id="hero">
+        <!-- 3D Perspective Stage -->
+        <div class="hero-scene-3d" aria-hidden="true">
+          <div class="hero-scene-stage">
+            <div class="hero-backdrop-sky"></div>
+            
+            <!-- Mountain Ridges in 3D Space -->
+            <svg class="hero-mountain-bg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+              <!-- Distant Peaks -->
+              <path d="M0,600 L0,320 L240,210 L460,340 L720,160 L940,320 L1180,180 L1440,290 L1440,600 Z" fill="#0C1018" opacity="0.6"/>
+              <!-- Mid Ridge -->
+              <path d="M0,600 L0,380 L320,270 L580,390 L880,240 L1200,380 L1440,280 L1440,600 Z" fill="#080C12" opacity="0.85"/>
+              <!-- Foreground Road Cliff -->
+              <path d="M0,600 L0,480 L420,440 L840,490 L1260,420 L1440,450 L1440,600 Z" fill="#05070A"/>
+            </svg>
+
+            <!-- Parked Ridge Car with Glowing Headlights -->
+            <div class="hero-car-ridge">
+              <!-- Headlight Beam Cutting into the Fog -->
+              <div class="hero-headlight-cone"></div>
+              <!-- Car Silhouette -->
+              <svg class="hero-car-silhouette" viewBox="0 0 160 65" fill="none">
+                <path d="M12 45 L30 45 L45 22 L100 22 L130 38 L152 40 L155 52 L140 54 L134 50 L114 50 L108 54 L48 54 L42 50 L24 50 L18 54 Z" fill="#E8ECF1"/>
+                <path d="M48 24 L95 24 L122 38 L48 38 Z" fill="#0A0E14" opacity="0.85"/>
+                <polygon points="150,40 156,42 150,44" fill="#FFB547"/>
+                <circle cx="33" cy="50" r="10" fill="#05070A" stroke="#374151" stroke-width="3"/>
+                <circle cx="124" cy="50" r="10" fill="#05070A" stroke="#374151" stroke-width="3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content Overlay -->
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="loader-hud-pulse"></span>
+              <span>STOP 1 // BASE CAMP · GUJARAT, INDIA</span>
+            </div>
+
+            <h1 class="hero-headline">
+              Hi, I'm <span class="highlight">Tanishq Patel</span>.
+            </h1>
+
+            <!-- CSS-only Rotating Role Ticker -->
+            <div class="role-ticker-wrap">
+              <span class="role-ticker-prefix">I am a</span>
+              <div class="role-ticker-window">
+                <div class="role-ticker-track">
+                  <div class="role-ticker-item">B.Tech CSE Student ·</div>
+                  <div class="role-ticker-item">Android Developer ·</div>
+                  <div class="role-ticker-item">Mountain Chaser ·</div>
+                  <div class="role-ticker-item">B.Tech CSE Student ·</div>
+                </div>
+              </div>
+            </div>
+
+            <p class="hero-subtitle">
+              Developer and traveller based in Gujarat, India. Always chasing the next road and the next summit. Engineering resilient, offline-first mobile systems by day, navigating high-altitude mountain passes by night.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">
+                <span>View Expeditions</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                <span>Get in touch</span>
+              </a>
+            </div>
+
+            <!-- Speedometer Scroll Indicator -->
+            <div class="speedometer-scroll" aria-hidden="true">
+              <div class="gauge-dial">
+                <div class="gauge-needle"></div>
+              </div>
+              <span>Cruising Gear · Scroll Down</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SHORT ABOUT TEASER: The Philosophy of Code & Mountains
+           ==================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Waypoint 01 // Origin</span>
+            <h2 class="section-title">From Algorithms to High Altitudes</h2>
+            <!-- ✏️ EDIT: Short teaser about your passion -->
+            <p class="section-subtitle">
+              I believe great software is built just like a long mountain expedition: with careful route planning, relentless focus, and architectures resilient enough to handle zero-signal conditions.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 2.5rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem;">
+              <div style="max-width: 650px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Building with a Driver's Precision</h3>
+                <p style="margin-bottom: 1.25rem;">
+                  Whether architecting an offline-first SQLite database schema for remote users or tackling hairpin turns on a high-altitude pass, I value elegance, autonomy, and zero bloat.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <span class="tag-chip active">Kotlin First</span>
+                  <span class="tag-chip active">Zero-Signal Reliability</span>
+                  <span class="tag-chip active">Solo-Founder Execution</span>
+                </div>
+              </div>
+              <a href="about.html" class="btn btn-secondary">
+                <span>Read Full Log</span>
+                <span style="color: var(--amber);">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           FEATURED PROJECTS TEASER: RupeeWise & GatiSetu
+           ==================================================================== -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Waypoint 02 // Expeditions</span>
+            <h2 class="section-title">Featured Expeditions</h2>
+            <p class="section-subtitle">
+              Native Android systems and real-world logistics platforms built for reliability.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJECT 1: RupeeWise -->
+            <article class="project-card" data-category="mobile">
+              <div class="project-cover">
+                <!-- Fallback gradient and icon if image isn't dropped in yet -->
+                <div class="project-cover-placeholder">
+                  <!-- ✏️ EDIT: Image file placed in images/project-rupeewise.jpg -->
+                  <img src="images/project-rupeewise.jpg" alt="RupeeWise App Interface" loading="lazy" onerror="this.style.display='none'">
+                  <div class="project-badge-top">
+                    <span class="tag-chip active">ANDROID // FINTECH</span>
+                  </div>
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                    <circle cx="7" cy="15" r="1.5" fill="var(--amber)"/>
+                  </svg>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">100% OFFLINE VAULT</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Native Android · Privacy First</span>
+                <h3 class="project-title">RupeeWise</h3>
+                <p class="project-summary">
+                  A 100% offline-first native Android app combining a personal expense manager, a Khaata debt tracker with partial installments, and group bill splitting. Protected with biometric authentication.
+                </p>
+                <div class="project-tags">
+                  <span class="tag-chip">Kotlin</span>
+                  <span class="tag-chip">Jetpack Compose</span>
+                  <span class="tag-chip">Room SQLite</span>
+                  <span class="tag-chip">Biometrics</span>
+                </div>
+                <div class="project-footer">
+                  <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted);">Status: Complete</span>
+                  <a href="projects.html#modal-rupeewise" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                    Inspect Expedition →
+                  </a>
+                </div>
+              </div>
+              <div class="project-route-line"></div>
+            </article>
+
+            <!-- PROJECT 2: GatiSetu -->
+            <article class="project-card" data-category="startup">
+              <div class="project-cover">
+                <div class="project-cover-placeholder">
+                  <!-- ✏️ EDIT: Image file placed in images/project-gatisetu.jpg -->
+                  <img src="images/project-gatisetu.jpg" alt="GatiSetu Logistics Platform" loading="lazy" onerror="this.style.display='none'">
+                  <div class="project-badge-top">
+                    <span class="tag-chip active">B2B LOGISTICS // STARTUP</span>
+                  </div>
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--amber)" stroke-width="1.5">
+                    <rect x="1" y="3" width="15" height="13"/>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                  </svg>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">NH-48 GUJARAT FREIGHT CORRIDOR</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category">Freight Tech · Gujarat Corridor</span>
+                <h3 class="project-title">GatiSetu</h3>
+                <p class="project-summary">
+                  Solo-founder B2B freight marketplace on the 370-km NH-48 Gujarat corridor, matching empty returning trucks ("khali fero") with GIDC factories needing spot freight.
+                </p>
+                <div class="project-tags">
+                  <span class="tag-chip">Solo Founder</span>
+                  <span class="tag-chip">PWA Driver Portal</span>
+                  <span class="tag-chip">Multi-Tenant</span>
+                  <span class="tag-chip">WhatsApp API</span>
+                </div>
+                <div class="project-footer">
+                  <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted);">NH-48 Corridor</span>
+                  <a href="projects.html#modal-gatisetu" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                    Inspect Expedition →
+                  </a>
+                </div>
+              </div>
+              <div class="project-route-line"></div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="projects.html" class="btn btn-secondary">
+              <span>View All Expeditions & Architecture Dives</span>
+              <span style="color: var(--amber);">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SKILLS MARQUEE STRIP: Infinite Pure CSS Loop
+           ==================================================================== -->
+      <section class="marquee-strip" aria-label="Technical skills marquee">
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <div class="marquee-item"><span class="marquee-dot"></span> HTML5</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Vanilla CSS3</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Python</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Responsive Web Design</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Semantic HTML</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> CSS Keyframe Animations</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Python Scripting</div>
+          <!-- Set 2 (Identical duplicate for seamless continuous marquee) -->
+          <div class="marquee-item"><span class="marquee-dot"></span> HTML5</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Vanilla CSS3</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Python</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Responsive Web Design</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Semantic HTML</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> CSS Keyframe Animations</div>
+          <div class="marquee-item"><span class="marquee-dot"></span> Python Scripting</div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           EXPEDITION METRICS: Stats Row
+           ==================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div class="stats-grid">
+            <!-- ✏️ EDIT: Your Project Count -->
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>10</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Projects & Modules Built</div>
+            </div>
+
+            <!-- Years Coding -->
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>3</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Years of Deep Coding</div>
+            </div>
+
+            <!-- Places Explored -->
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>10</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Mountain Passes & Places Explored</div>
+            </div>
+
+            <!-- Kilometers Driven -->
+            <div class="stat-box">
+              <div class="stat-number">
+                <span>10,000</span><span class="accent">+</span>
+              </div>
+              <div class="stat-label">Kilometers Driven on Highway</div>
+            </div>
+          </div>
+
+          <!-- Closing Call to Action Banner -->
+          <div class="glass-card" style="margin-top: 4rem; text-align: center; padding: 4rem 2rem; border-color: var(--border-amber);">
+            <span class="section-tag" style="justify-content: center;">Next Destination // The Summit</span>
+            <h2 style="font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin: 0.5rem 0 1rem;">
+              Ready to start the next expedition together?
+            </h2>
+            <p style="max-width: 580px; margin: 0 auto 2rem; color: var(--muted);">
+              Currently seeking software engineering and Android developer internships. Let's build robust systems that endure the toughest terrain.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">
+                <span>Reach the Summit</span>
+                <span style="font-weight: bold;">→</span>
+              </a>
+              <a href="about.html" class="btn btn-secondary">
+                <span>Explore The Traveller</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================================
+         SHARED FOOTER: Mini Route Map (7 Stops) & Terminal Details
+         ======================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Interactive Route Map -->
+        <div class="footer-route-map">
+          <div class="footer-route-line"></div>
+          <ul class="footer-stops-list">
+            <li class="footer-stop-item">
+              <a href="index.html" class="footer-stop-dot" style="border-color: var(--amber); color: var(--amber);">01</a>
+              <a href="index.html" class="footer-stop-name" style="color: var(--amber);">Base Camp</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="about.html" class="footer-stop-dot">02</a>
+              <a href="about.html" class="footer-stop-name">The Traveller</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="projects.html" class="footer-stop-dot">03</a>
+              <a href="projects.html" class="footer-stop-name">Expeditions</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="skills.html" class="footer-stop-dot">04</a>
+              <a href="skills.html" class="footer-stop-name">Toolkit</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="education.html" class="footer-stop-dot">05</a>
+              <a href="education.html" class="footer-stop-name">Milestones</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="interests.html" class="footer-stop-dot">06</a>
+              <a href="interests.html" class="footer-stop-name">Off-Road</a>
+            </li>
+            <li class="footer-stop-item">
+              <a href="contact.html" class="footer-stop-dot">07</a>
+              <a href="contact.html" class="footer-stop-name">Summit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <!-- ✏️ EDIT: Your Name in the copyright -->
+          <div>
+            © 2026 Tanishq Patel. Built with pure HTML & CSS.
+          </div>
+          <div class="footer-road-quote">
+            "Built on the road, one commit at a time."
+          </div>
+          <div>
+            <a href="index.html" style="color: var(--amber); display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>↑ Return to Base Camp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
